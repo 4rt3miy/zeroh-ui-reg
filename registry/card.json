@@ -1,0 +1,24 @@
+{
+  "name": "card",
+  "type": "component",
+  "files": [
+    "components/ui/card.tsx",
+    "components/ui/button.tsx",
+    "components/ui/badge.tsx",
+    "lib/utils.ts",
+    "lib/fonts.ts",
+    "styles/zeroh-theme.css"
+  ],
+  "tailwind": true,
+  "meta": {
+    "displayName": "Card",
+    "description": "A composable card surface for grouping related content with flexible header and footer slots.",
+    "category": "Layout",
+    "tags": [
+      "surface",
+      "container",
+      "layout"
+    ],
+    "status": "Stable"
+  }
+}

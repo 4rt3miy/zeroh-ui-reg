@@ -1,0 +1,6 @@
+{
+  "registries": {
+    "@your-org": "https://raw.githubusercontent.com/your-org/zeroh-ui-reg/main/registry/{name}.json"
+  }
+}
+

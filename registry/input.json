@@ -1,0 +1,22 @@
+{
+  "name": "input",
+  "type": "component",
+  "files": [
+    "components/ui/input.tsx",
+    "lib/utils.ts",
+    "lib/fonts.ts",
+    "styles/zeroh-theme.css"
+  ],
+  "tailwind": true,
+  "meta": {
+    "displayName": "Input",
+    "description": "A text input field with focus styles and size variants for forms and search interfaces.",
+    "category": "Forms",
+    "tags": [
+      "form",
+      "field",
+      "text"
+    ],
+    "status": "Stable"
+  }
+}

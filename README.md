@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## ZeroH UI
 
-## Getting Started
+ZeroH UI is a custom shadcn/ui design system packaged with:
 
-First, run the development server:
+- A themed component library under `src/components/ui`
+- Registry metadata in `registry/*.json` consumable via shadcn MCP
+- A Next.js docs site for browsing components, tokens, and MCP usage
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Use this repository as the single source of truth for your design system, documentation, and registry distribution.
+
+## Project structure
+
+```
+src/
+  app/                # Docs site routes (home, components, foundations, mcp)
+  components/
+    ui/               # Themed shadcn primitives
+    sections/         # Docs-specific UI
+    previews/         # Component preview renderers
+  lib/
+    components.config.ts   # Metadata powering docs + registry generator
+    registry-generator.ts  # Script to emit registry JSON
+registry/             # Generated registry entries
+components.json       # Registry URL mapping (for MCP clients)
+.cursor/.vscode       # MCP client configuration files
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Available scripts
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `npm run dev` — start the docs site locally
+- `npm run build` — create a production build
+- `npm run lint` — lint the project
+- `npm run generate:registry` — regenerate `registry/*.json` from `components.config.ts`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Using the registry
 
-## Learn More
+1. Publish this repository (or ensure the default branch is accessible to consumers).
+2. Provide teammates with the MCP configuration in `/mcp`.
+3. Consumers add the following to their project `components.json`:
 
-To learn more about Next.js, take a look at the following resources:
+```json
+{
+  "registries": {
+    "@your-org": "https://raw.githubusercontent.com/your-org/zeroh-ui-reg/main/registry/{name}.json"
+  }
+}
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Now MCP-enabled editors (Cursor, VS Code, Codex) can browse and install ZeroH UI components by namespace, e.g. `@your-org/button`.

@@ -1,0 +1,23 @@
+{
+  "name": "button",
+  "type": "component",
+  "files": [
+    "components/ui/button.tsx",
+    "components/ui/badge.tsx",
+    "lib/utils.ts",
+    "lib/fonts.ts",
+    "styles/zeroh-theme.css"
+  ],
+  "tailwind": true,
+  "meta": {
+    "displayName": "Button",
+    "description": "A flexible button component with variant and size options for actions throughout the product.",
+    "category": "Forms",
+    "tags": [
+      "action",
+      "interactions",
+      "primary"
+    ],
+    "status": "Stable"
+  }
+}
