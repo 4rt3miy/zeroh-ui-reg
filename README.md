@@ -36,7 +36,20 @@ components.json       # Registry URL mapping (for MCP clients)
 
 1. Publish this repository (or ensure the default branch is accessible to consumers).
 2. Provide teammates with the MCP configuration in `/mcp`.
-3. Consumers add the following to their project `components.json`:
+3. In Cursor (or VS Code) keep the MCP server config in `.cursor/mcp.json`:
+
+```json
+{
+  "mcpServers": {
+    "shadcn": {
+      "command": "npx",
+      "args": ["shadcn@latest", "mcp"]
+    }
+  }
+}
+```
+
+4. Consumers add the registry URL to their project `components.json`:
 
 ```json
 {
