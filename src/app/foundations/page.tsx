@@ -65,7 +65,7 @@ export default function FoundationsPage() {
         <header className="space-y-2">
           <h2 className="text-3xl font-semibold tracking-tight">Typography</h2>
           <p className="text-muted-foreground">
-            ZeroH UI ships with Geist Sans and Geist Mono via <code>next/font</code>. Adjust sizes to fit your rhythm.
+            ZeroH UI ships with Quicksand for sans text and Geist Mono for code via <code>next/font</code>. Adjust sizes to fit your rhythm.
           </p>
         </header>
         <div className="grid gap-6 md:grid-cols-2">

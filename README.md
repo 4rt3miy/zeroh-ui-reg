@@ -41,9 +41,9 @@ components.json       # Registry URL mapping (for MCP clients)
 ```json
 {
   "registries": {
-    "@your-org": "https://raw.githubusercontent.com/your-org/zeroh-ui-reg/main/registry/{name}.json"
+    "@zeroh": "https://raw.githubusercontent.com/4rt3miy/zeroh-ui-reg/main/registry/{name}.json"
   }
 }
 ```
 
-Now MCP-enabled editors (Cursor, VS Code, Codex) can browse and install ZeroH UI components by namespace, e.g. `@your-org/button`.
+Now MCP-enabled editors (Cursor, VS Code, Codex) can browse and install ZeroH UI components by namespace, e.g. `@zeroh/button`.

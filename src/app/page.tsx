@@ -26,7 +26,7 @@ const quickLinks = [
 
 export default function Home() {
   return (
-    <main className="mx-auto flex w-full max-w-5xl flex-col gap-16 px-6 pb-20 pt-16">
+    <div className="flex flex-col gap-16 pb-20 pt-6">
       <section className="space-y-8">
         <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1 text-sm font-medium text-primary">
           <span className="h-2 w-2 rounded-full bg-primary" />
@@ -49,7 +49,7 @@ export default function Home() {
             </Link>
           </Button>
           <Button asChild variant="outline" size="lg">
-            <Link href="https://github.com/your-org/zeroh-ui-reg" target="_blank" rel="noreferrer">
+            <Link href="https://github.com/4rt3miy/zeroh-ui-reg" target="_blank" rel="noreferrer">
               View GitHub repo
             </Link>
           </Button>
@@ -88,6 +88,6 @@ export default function Home() {
           ))}
         </div>
       </section>
-    </main>
+    </div>
   );
 }

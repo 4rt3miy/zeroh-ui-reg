@@ -64,7 +64,7 @@ ${component.example.usage}`;
         <div className="flex items-center justify-between">
           <h2 className="text-2xl font-semibold tracking-tight">Preview</h2>
           <Button variant="outline" size="sm" asChild>
-            <a href={`https://raw.githubusercontent.com/your-org/zeroh-ui-reg/main/${component.registry.files[0]}`} target="_blank" rel="noreferrer">
+            <a href={`https://raw.githubusercontent.com/4rt3miy/zeroh-ui-reg/main/${component.registry.files[0]}`} target="_blank" rel="noreferrer">
               View source
             </a>
           </Button>

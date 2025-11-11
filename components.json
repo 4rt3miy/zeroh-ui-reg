@@ -1,6 +1,6 @@
 {
   "registries": {
-    "@your-org": "https://raw.githubusercontent.com/your-org/zeroh-ui-reg/main/registry/{name}.json"
+    "@zeroh": "https://raw.githubusercontent.com/4rt3miy/zeroh-ui-reg/main/registry/{name}.json"
   }
 }
 

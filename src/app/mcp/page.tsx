@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 const componentsJson = `{
   "registries": {
-    "@your-org": "https://raw.githubusercontent.com/your-org/zeroh-ui-reg/main/registry/{name}.json"
+    "@zeroh": "https://raw.githubusercontent.com/4rt3miy/zeroh-ui-reg/main/registry/{name}.json"
   }
 }`;
 
@@ -39,7 +39,7 @@ export default function MCPPage() {
       <section className="space-y-4">
         <h2 className="text-2xl font-semibold tracking-tight">1. Add the registry</h2>
         <p className="text-sm text-muted-foreground">
-          Include the <code>@your-org</code> namespace in your project&apos;s <code>components.json</code>.
+          Include the <code>@zeroh</code> namespace in your project&apos;s <code>components.json</code>.
         </p>
         <CodeBlock code={componentsJson} />
       </section>
@@ -67,9 +67,9 @@ export default function MCPPage() {
       <section className="space-y-4">
         <h2 className="text-2xl font-semibold tracking-tight">3. Try these prompts</h2>
         <ul className="list-disc space-y-2 pl-6 text-sm text-muted-foreground">
-          <li>“List all components in the @your-org registry.”</li>
-          <li>“Install the button and card components from @your-org.”</li>
-          <li>“Generate a settings page using @your-org/card and @your-org/input.”</li>
+          <li>“List all components in the @zeroh registry.”</li>
+          <li>“Install the button and card components from @zeroh.”</li>
+          <li>“Generate a settings page using @zeroh/card and @zeroh/input.”</li>
         </ul>
       </section>
     </div>
