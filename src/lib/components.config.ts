@@ -115,6 +115,56 @@ export const componentsRegistry: ComponentMeta[] = [
       tailwind: true,
     },
   },
+  {
+    name: "textarea",
+    displayName: "Textarea",
+    description: "A multi-line text field with accessible focus states for longer user input.",
+    category: "Forms",
+    tags: ["form", "field", "text", "feedback"],
+    status: "Stable",
+    docsPath: "/components/textarea",
+    previewComponent: "TextareaPreview",
+    importPath: "@/components/ui/textarea",
+    example: {
+      usage: `<Textarea placeholder="Share your thoughts..." />`,
+    },
+    registry: {
+      type: "component",
+      files: ["components/ui/textarea.tsx", "lib/utils.ts", "lib/fonts.ts", "styles/zeroh-theme.css"],
+      tailwind: true,
+    },
+  },
+  {
+    name: "switch",
+    displayName: "Switch",
+    description: "A compact toggle for enabling or disabling settings with clear on/off states.",
+    category: "Forms",
+    tags: ["toggle", "control", "interaction"],
+    status: "Stable",
+    docsPath: "/components/switch",
+    previewComponent: "SwitchPreview",
+    importPath: "@/components/ui/switch",
+    example: {
+      usage: `<Switch defaultChecked />`,
+      props: `<ul>
+  <li><strong>defaultChecked</strong> — set true to render the switch in an on state.</li>
+  <li><strong>disabled</strong> — disables user interaction.</li>
+  <li><strong>onCheckedChange</strong> — callback fired when the switch value changes.</li>
+</ul>`,
+    },
+    registry: {
+      type: "component",
+      files: [
+        "components/ui/switch.tsx",
+        "components/ui/label.tsx",
+        "lib/utils.ts",
+        "lib/fonts.ts",
+        "styles/zeroh-theme.css"
+      ],
+      dependencies: ["@radix-ui/react-switch"],
+      tailwind: true,
+    },
+  },
 ];
 
 export function getComponentByName(name: string) {

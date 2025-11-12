@@ -1,0 +1,26 @@
+{
+  "name": "switch",
+  "type": "component",
+  "files": [
+    "components/ui/switch.tsx",
+    "components/ui/label.tsx",
+    "lib/utils.ts",
+    "lib/fonts.ts",
+    "styles/zeroh-theme.css"
+  ],
+  "dependencies": [
+    "@radix-ui/react-switch"
+  ],
+  "tailwind": true,
+  "meta": {
+    "displayName": "Switch",
+    "description": "A compact toggle for enabling or disabling settings with clear on/off states.",
+    "category": "Forms",
+    "tags": [
+      "toggle",
+      "control",
+      "interaction"
+    ],
+    "status": "Stable"
+  }
+}

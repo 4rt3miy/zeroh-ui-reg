@@ -1,0 +1,23 @@
+{
+  "name": "textarea",
+  "type": "component",
+  "files": [
+    "components/ui/textarea.tsx",
+    "lib/utils.ts",
+    "lib/fonts.ts",
+    "styles/zeroh-theme.css"
+  ],
+  "tailwind": true,
+  "meta": {
+    "displayName": "Textarea",
+    "description": "A multi-line text field with accessible focus states for longer user input.",
+    "category": "Forms",
+    "tags": [
+      "form",
+      "field",
+      "text",
+      "feedback"
+    ],
+    "status": "Stable"
+  }
+}
